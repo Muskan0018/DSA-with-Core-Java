@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class CubePattern {
+public class PatternOne {
     public static void main(String[] args) {
         Scanner sc  = new Scanner(System.in);
         System.out.println("Enter number of rows: ");
@@ -20,7 +20,7 @@ public class CubePattern {
 
 
 
-/*    CUBE PATTERN
+/*    n-forest PATTERN  
      * * * *
      * * * *
      * * * * 
