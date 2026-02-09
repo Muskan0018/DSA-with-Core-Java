@@ -165,5 +165,21 @@ PATTERN 15: Reverse Letter Triangle Pattern
  // 'A' + (n - i - 1) gives the ASCII value of the character to be printed. if n = 5 and i = 0 then it will print 'E', 
      if n = 5 and i = 1 then it will print 'D' and so on.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
+
+PATTERN 16: Alpha-Ramp Pattern
+     A
+     BB
+     CCC
+     DDDD
+     EEEEE
+
+Approach:
+
+This pattern prints a right-angled triangle of alphabets where each row contains the same character repeatedly. The character printed in row i is 'A' + i.
+
+The outer loop runs from i = 0 to i = N - 1, for each row.
+In each row, the character to print is determined by ch = 'A' + i.
+The inner loop runs from j = 0 to j = i, printing the character ch exactly i+1 times.
+A newline is printed at the end of each row to move to the next line.   
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------
