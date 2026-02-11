@@ -182,4 +182,40 @@ In each row, the character to print is determined by ch = 'A' + i.
 The inner loop runs from j = 0 to j = i, printing the character ch exactly i+1 times.
 A newline is printed at the end of each row to move to the next line.   
 ----------------------------------------------------------------------------------------------------------------------------------------------------
+
+PATTERN 17: Alpha-Hill Pattern
+      A
+    A B A
+  A B C B A
+A B C D C B A
+
+Iterate from i = 0 to N - 1 to process each row.
+Print (N - i - 1) spaces to center-align the pyramid.
+Initialize a character variable ch = 'A'.
+Calculate the midpoint of the row as breakpoint = (2 * i + 1) / 2.
+Iterate from j = 1 to 2 * i + 1 to print the characters:
+If j ≤ breakpoint, print ch and increment it.
+Else, decrement ch and print it.
+Print (N - i - 1) spaces again (optional, as they don't affect output but maintain symmetry in code).
+Print a newline to move to the next row.
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+PATTERN 18: Alpha-Triangle Pattern 
+     E 
+     D E
+     C D E
+     B C D E
+     A B C D E
+
+ The goal is to print a pattern of alphabets where each row starts with a letter that is progressively closer to 'A' as we move down. The last column always has the letter 'A' + N - 1, and in each row, we print an increasing sequence from a starting letter up to this last letter.
+
+Loop through each row i from 0 to N-1.
+For each row, determine the starting character:
+startChar = ('A' + N - 1) - i
+Print characters from startChar to ('A' + N - 1). OR for(char ch = (char) ('E' - i); ch <= 'E' ; ch++)
+Move to the next line after printing each row.    
+----------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------
