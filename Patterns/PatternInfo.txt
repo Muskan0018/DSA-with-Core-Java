@@ -215,6 +215,27 @@ startChar = ('A' + N - 1) - i
 Print characters from startChar to ('A' + N - 1). OR for(char ch = (char) ('E' - i); ch <= 'E' ; ch++)
 Move to the next line after printing each row.    
 ----------------------------------------------------------------------------------------------------------------------------------------------------
+
+PATTERN 19: Symmetric-Void Pattern
+
+
+The pattern consists of two mirrored halves forming an hourglass-like shape made of stars (*). The upper half starts with N stars on both sides and gradually reduces, while the lower half starts with 1 star on both sides and gradually increases. Spaces in between adjust accordingly to maintain symmetry.
+
+Upper Half:
+     Initialize iniS = 0 (number of spaces between the two star blocks).
+     For each row i from 0 to N-1:
+     Print N - i stars.
+     Print iniS spaces.
+     Print N - i stars again.
+     Increase iniS by 2.
+
+Lower Half:
+     Initialize iniS = 2 * N - 2.
+     For each row i from 1 to N:
+     Print i stars.
+     Print iniS spaces.
+     Print i stars again.
+     Decrease iniS by 2.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------
