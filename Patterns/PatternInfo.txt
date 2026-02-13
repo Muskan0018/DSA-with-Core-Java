@@ -276,7 +276,11 @@ Update spaces:
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 
 PATTERN 21: Hollow Rectangle Pattern
-
+     *****
+     *   *
+     *   *
+     *   *
+     *****
 
 We need to print a square of size n × n but only with stars on the border, leaving the inner cells as spaces. This creates a "hollow square" effect.
 
@@ -287,4 +291,28 @@ For each position (i, j):
      Else, print a space.
 After printing one row, move to the next line.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
+
+PATTERN 22: The Number Pattern
+     5 5 5 5 5 5 5 5 5 
+     5 4 4 4 4 4 4 4 5 
+     5 4 3 3 3 3 3 4 5 
+     5 4 3 2 2 2 3 4 5 
+     5 4 3 2 1 2 3 4 5 
+     5 4 3 2 2 2 3 4 5 
+     5 4 3 3 3 3 3 4 5 
+     5 4 4 4 4 4 4 4 5 
+     5 5 5 5 5 5 5 5 5 
+
+We need to print a square matrix of size (2 * n - 1) × (2 * n - 1). The outermost border should contain n, the next inner layer n-1, then n-2, and so on until the center which contains 1. This creates a concentric square pattern.
+
+We use two nested loops:
+     Outer loop runs for rows (i from 0 to 2n-2).
+     Inner loop runs for columns (j from 0 to 2n-2).
+For each cell (i, j), compute its distance from all four borders:
+     top = i
+     left = (2n - 2) - i
+     bottom = j
+     right = (2n - 2) - j
+Take the minimum of these four distances. This tells us how deep we are inside the square.
+Print n - minDistance at that position.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
