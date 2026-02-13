@@ -217,7 +217,16 @@ Move to the next line after printing each row.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 
 PATTERN 19: Symmetric-Void Pattern
-
+     **********
+     ****  ****
+     ***    ***
+     **      **
+     *        *
+     *        *
+     **      **
+     ***    ***
+     ****  ****
+     **********
 
 The pattern consists of two mirrored halves forming an hourglass-like shape made of stars (*). The upper half starts with N stars on both sides and gradually reduces, while the lower half starts with 1 star on both sides and gradually increases. Spaces in between adjust accordingly to maintain symmetry.
 
@@ -230,13 +239,52 @@ Upper Half:
      Increase iniS by 2.
 
 Lower Half:
-     Initialize iniS = 2 * N - 2.
+     Initialize iniS = 8
      For each row i from 1 to N:
      Print i stars.
      Print iniS spaces.
      Print i stars again.
-     Decrease iniS by 2.
+     Decrease iniS by 2. (iniS -= 2)
 ----------------------------------------------------------------------------------------------------------------------------------------------------
+
+PATTERN 20: Symmetric-Butterfly Pattern
+     *        *
+     **      **
+     ***    ***
+     ****  ****
+     **********
+     ****  ****
+     ***    ***
+     **      **
+     *        *
+
+This pattern prints two symmetrical right-angled triangles facing each other with spaces in between. - In the first half, stars increase while spaces decrease. - In the second half, stars decrease while spaces increase. The symmetry is maintained across the middle row.
+
+Initialize spaces = 2 * n - 2.
+Run an outer loop from 1 to 2*n - 1 (total rows).
+For each row:
+    Determine number of stars:
+       If i <= n, stars = i.
+       If i > n, stars = 2*n - i.
+     Print stars stars.
+     Print spaces spaces.
+     Print stars stars again.
+
+Update spaces:
+      If i < n, decrease spaces by 2.
+      Else, increase spaces by 2.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
+
+PATTERN 21: Hollow Rectangle Pattern
+
+
+We need to print a square of size n × n but only with stars on the border, leaving the inner cells as spaces. This creates a "hollow square" effect.
+
+Run an outer loop i from 0 to n-1 (rows).
+Inside, run an inner loop j from 0 to n-1 (columns).
+For each position (i, j):
+     If it lies on the border (i == 0, j == 0, i == n-1, j == n-1), print *.
+     Else, print a space.
+After printing one row, move to the next line.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------
