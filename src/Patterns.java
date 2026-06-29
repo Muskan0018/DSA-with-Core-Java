@@ -1,0 +1,116 @@
+import java.util.Scanner;
+
+public class Patterns {
+    static void main(String[] args) {
+
+// PATTERN 1: Solid Square Pattern
+//        int n = 4;
+//        for(int row = 1; row <= n; row++) {
+//            for(int col = 1; col <= n; col++) {   // for each row -> n column
+//                System.out.print("* ");
+//            }
+//            System.out.println();  // move to next row
+//        }
+
+// PATTERN 2: Solid Rectangular Pattern
+//        int n = 3;
+//        for(int row = 1; row <= n; row++) {
+//            for (int col = 1; col <= 5; col++){   //for each row -> 5 column
+//                System.out.print("* ");
+//            }
+//            System.out.println();
+//        }
+
+// PATTERN 3: Solid Right-Angle Triangle Pattern
+//        int n = 5;
+//        for(int row = 1; row <= n; row++){
+//            for (int col = 1; col <= row; col++) {
+//                System.out.print("* ");
+//            }
+//            System.out.println();
+//        }
+
+// PATTERN 4: Solid Rhombus Pattern
+//         int n = 5;
+//         for (int row = 1; row <= n; row++){
+//             // for each row -> spaces, stars
+//
+//             //spaces
+//             for (int col = 1; col <= n - row; col++){
+//                 System.out.print(" ");
+//             }
+//             //columns
+//            for (int col = 1; col <= n; col++){
+//                System.out.print("* ");
+//            }
+//             System.out.println();
+//         }
+
+// PATTERN 5: Inverted Right-Angle Triangle Pattern
+//        int n = 5;
+//        for (int row = 1; row <= n; row++){
+//
+//            for (int col = 1; col <= 1+(n - row); col++){
+//                System.out.print("* ");
+//            }
+//            System.out.println();
+//        }
+
+// PATTERN 6: Solid Pyramid Pattern
+//        int n = 5;
+//        for (int row = 1; row <= n; row++) {
+//            //space
+//            for (int col = 1; col <= n - row; col++){
+//                System.out.print(" ");
+//            }
+//            // stars
+//            for (int col = 1; col <= (2 * row - 1); col++){
+//                System.out.print("*");
+//            }
+//            System.out.println();
+//        }
+
+ // PATTERN 7: Solid Inverted Pyramid Pattern
+//        int n = 4;
+//        for (int row = 1; row <= n; row++){
+//
+//            //spaces
+//            int space = row - 1;
+//            for (int col = 1; col <= space; col++){
+//                System.out.print(" ");
+//            }
+//            //stars (2n - 2row + 1)
+//            for (int col = 1; col <= 2*n-row-space; col++) {
+//                System.out.print("*");
+//            }
+//            System.out.println();
+//        }
+
+ // PATTERN 8: Hollow Pattern
+        int n = 4;
+        for (int row = 1; row <= n; row++){
+
+            //for each row -> 6 column
+            for (int col = 1; col <= 6; col++){
+                if (row == 1 || row == n){
+                    System.out.print("* ");
+                }
+                //middle rows
+                else{
+                    if(col == 1 || col == 6){
+                        System.out.print("* ");
+                    }
+//                    else if (col == 6) {
+//                        System.out.print("* ");
+//                    }
+                    else {
+                        //middle columns
+                        System.out.print("  ");
+                    }
+                }
+            }
+            // next row
+            System.out.println();
+        }
+    }
+}
