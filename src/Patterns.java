@@ -87,30 +87,104 @@ public class Patterns {
 //        }
 
  // PATTERN 8: Hollow Pattern
-        int n = 4;
-        for (int row = 1; row <= n; row++){
-
-            //for each row -> 6 column
-            for (int col = 1; col <= 6; col++){
-                if (row == 1 || row == n){
-                    System.out.print("* ");
-                }
-                //middle rows
-                else{
-                    if(col == 1 || col == 6){
-                        System.out.print("* ");
-                    }
-//                    else if (col == 6) {
+//        int n = 4;
+//        for (int row = 1; row <= n; row++){
+//
+//            //for each row -> 6 column
+//            for (int col = 1; col <= 6; col++){
+//                if (row == 1 || row == n){
+//                    System.out.print("* ");
+//                }
+//                //middle rows
+//                else{
+//                    if(col == 1 || col == 6){
 //                        System.out.print("* ");
 //                    }
-                    else {
-                        //middle columns
-                        System.out.print("  ");
-                    }
-                }
-            }
-            // next row
-            System.out.println();
-        }
+////                    else if (col == 6) {
+////                        System.out.print("* ");
+////                    }
+//                    else {
+//                        //middle columns
+//                        System.out.print("  ");
+//                    }
+//                }
+//            }
+//            // next row
+//            System.out.println();
+//        }
+
+// PATTERN 9: Hollow Right-Angle Triangle
+//        int n = 5;
+//        for (int row = 1; row <= n; row++){
+//                if (row == 1 || row == 2 || row == n){
+//                    for (int col = 1; col <= row; col++) {
+//                        System.out.print("* ");
+//                    }
+//                }else{
+//                    // middle row
+//                    System.out.print("* ");  // 1*
+//                    // (row - 2) spaces
+//                    for (int col = 1; col <= row - 2; col++){
+//                        System.out.print("  ");
+//                    }
+//                    //1*
+//                    System.out.print("* ");
+//            }
+//            System.out.println();
+//        }
+
+//  PATTERN 10: Hollow Pyramid Pattern
+//        int n = 5;
+//        for (int row = 1; row <= 5; row++) {
+//            for(int col = 1; col <= n - row; col++){  // spaces
+//                System.out.print("  ");
+//            }if(row == 1 || row == n){    // stars (for 1st & last line)
+//                for (int col = 1; col <= 2 * row - 1; col++) {
+//                    System.out.print("* ");
+//                }
+//            }else {
+//                System.out.print("* ");  // 1 star
+//                for (int col = 1; col <= 2 * row - 3; col++){      // spaces
+//                    System.out.print("  ");
+//                }
+//                System.out.print("* ");   // 1 start
+//            }
+//            System.out.println();
+//        }
+
+// PATTERN 11: Solid Diamond Pattern
+//        int n = 4;
+//          // for upper half
+//        for (int row = 1; row <= n; row++) {
+//            //spaces
+//            for (int col = 1; col <= n - row; col++) {
+//                System.out.print("  ");
+//            }
+//            //stars
+//            for (int col = 1; col <= 2 * row - 1; col++) {
+//                System.out.print("* ");
+//            }
+//            System.out.println();
+//        }
+//        // for Lower half
+//           for (int row = 1; row <= n; row++){
+//               // for skipping row 1
+//               if (row == 1){
+//                   continue;
+//               }
+//            //spaces
+//            int space = row - 1;
+//            for (int col = 1; col <= space; col++){
+//                System.out.print("  ");
+//            }
+//            //stars (2n - 2row + 1)
+//            for (int col = 1; col <= 2*n-row-space; col++) {
+//                System.out.print("* ");
+//            }
+//            System.out.println();
+//        }
+
+//PATTERN 12: Hollow Diamond
+           
     }
 }
