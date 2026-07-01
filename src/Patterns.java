@@ -185,6 +185,50 @@ public class Patterns {
 //        }
 
 //PATTERN 12: Hollow Diamond
-           
+//        int n = 4;
+//     // part 1
+//        for (int row = 1; row <= n; row++) {
+//            for(int col = 1; col <= n - row; col++){  // spaces
+//                System.out.print("  ");
+//            }if(row == 1 ){    // stars (for 1st )
+//                for (int col = 1; col <= 2 * row - 1; col++) {
+//                    System.out.print("* ");
+//                }
+//            }else {
+//                System.out.print("* ");  // 1 star
+//                for (int col = 1; col <= 2 * row - 3; col++){      // spaces
+//                    System.out.print("  ");
+//                }
+//                System.out.print("* ");   // 1 start
+//            }
+//            System.out.println();
+//        }
+//        // part 2
+//        for (int row = 1; row <= n-1; row++) {
+//
+//            // spaces
+//            for (int col = 1; col <= row; col++) {
+//                System.out.print("  ");
+//            }
+//            //stars (Last row)
+//            if (row == n - 1) {
+//                System.out.print("* ");
+//            }
+//            // remaining rows
+//            else {
+//                // 1*
+//                System.out.print("* ");
+//                // { 2(n-r) - 3 } spaces
+//                for (int col = 1; col <= 2 * (n - row) - 3; col++) {
+//                    System.out.print("  ");
+//                }
+//                //1*
+//                System.out.print("* ");
+//            }
+//            System.out.println();
+//        }
+
+// PATTERN 13: Symmetric Butterfly Pattern
+
     }
 }
