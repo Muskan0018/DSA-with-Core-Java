@@ -229,6 +229,180 @@ public class Patterns {
 //        }
 
 // PATTERN 13: Symmetric Butterfly Pattern
+//        int n = 4;
+//
+//        for (int row = 1; row <= n; row++){
+//            // Upper Half
+//            //part 1
+//            for (int col = 1; col <= row; col++){
+//                System.out.print("* ");
+//            }
+//            //part 2 (spaces)
+//            for (int col = 1; col <= 2 * (n - row); col++ ){
+//                System.out.print("  ");
+//            }
+//            //part 3
+//            for (int col = 1; col <= row; col++){
+//                System.out.print("* ");
+//            }
+//            System.out.println();
+//        }
+//        // Lower Half
+//        //part 4
+//        for (int row = 1; row <= n; row++){
+//            for (int col = 1; col <= 1 + (n - row); col++){
+//                System.out.print("* ");
+//            }
+//            //part 5 (spaces)
+//            for (int col = 1; col <= 2 * row - 2; col++){
+//                System.out.print("  ");
+//            }
+//            // part 6
+//            for (int col = 1; col <= 1 + (n - row); col++){
+//                System.out.print("* ");
+//            }
+//            System.out.println();
+//        }
 
+// PATTERN 14: Right-Angle Triangle with numeric values
+//        int n = 5;
+//        for (int row = 1; row <= n; row++){
+//            for (int col = 1; col <= row; col++){
+//                System.out.print(col + " ");
+//            }
+//            System.out.println();
+//        }
+
+// PATTERN 15:
+//         int n = 5;
+//         int count = 1;
+//         for (int row = 1; row <= n; row++){
+//             for (int col = 1; col <= row; col++){
+//                 System.out.print(count + " ");
+//                 count++;
+//             }
+//             System.out.println();
+//         }
+
+// PATTERN 16:
+//        int n = 5;
+
+        // METHOD 1
+//        for (int row = 1; row <= n; row++){
+//            for (int col = 1; col <= row; col++){
+//                int a = col;
+//                int b = ('A' - 1);
+//                int ans = a + b;
+//                char finalAns = (char)ans;
+//                System.out.print(finalAns + " ");
+//            }
+//            System.out.println();
+//        }
+        // METHOD 2
+//        for (int row = 0; row < n; row++){
+//            for (char ch = 'A'; ch <= 'A' + row; ch++){
+//                System.out.print(ch + " ");
+//            }
+//            System.out.println();
+//        }
+
+// PATTERN 17:
+//        int n = 5;
+//        for (int row = 1; row <= n; row++){
+//            for (int col = 1; col <= row; col++){
+//                char ch = (char)((n - col) + 'A');
+//                System.out.print(ch + " ");
+//            }
+//            System.out.println();
+//        }
+
+// PATTERN 18: Numeric Solid Pyramid
+//        int n = 4;
+//        for (int row = 1; row <= n; row++){
+//            // spaces (part 1)
+//            for (int col = 1; col <= n - row; col++){
+//                System.out.print("  ");
+//            }
+//            // part 2
+//            for (int col = 1; col <= row; col++){
+//                System.out.print(col + " ");
+//            }
+//            // part 3
+//            int rowValue = row;
+//            int decRowValue = row - 1;
+//            for (int col = 1; col <= row - 1; col++){
+//                System.out.print(decRowValue + " ");
+//                decRowValue--;
+//            }
+//            System.out.println();
+//        }
+
+// PATTERN 19: Symmetrical Pyramid Pattern
+        // Upper Half
+//        int n = 5;
+//        for (int row = 1; row <= n; row++){
+//
+//            //spaces
+//            int space = row - 1;
+//            for (int col = 1; col <= space; col++){
+//                System.out.print("  ");
+//            }
+//            //stars (2n - 2row + 1)
+//            for (int col = 1; col <= 2*n-2*row+1; col++) {
+//                System.out.print("* ");
+//            }
+//            System.out.println();
+//        }
+//        // Lower Half
+//        for (int row = 2; row <= n; row++) {
+//            //space
+//            for (int col = 1; col <= n - row; col++){
+//                System.out.print("  ");
+//            }
+//            // stars
+//            for (int col = 1; col <= (2 * row - 1); col++){
+//                System.out.print("* ");
+//            }
+//            System.out.println();
+//        }
+
+// PATTERN 20: Numeric Pyramid
+//         int n = 4;
+//         for (int row = 1; row <= n; row++){
+//             // spaces (n-row)
+//             for (int col = 1; col <= n - row; col++){
+//                 System.out.print("  ");
+//             }
+//             for (int col = 1; col <= 2*row-1; col++){
+//                 System.out.print(row + " ");
+//             }
+//
+//             System.out.println();
+//         }
+
+// PATTERN 21: Alphabetical Pyramid
+//        int n = 4;
+//        for (int row = 1; row <= n; row++){
+//            // part 1
+//            // spaces (n-row)
+//             for (int col = 1; col <= n - row; col++){
+//                 System.out.print("  ");
+//             }
+//             // part 2
+//            for (int col = 1; col <= row; col++){
+//                int a = col;
+//                int b = ('A' - 1);
+//                int ans = a + b;
+//                char finalAns = (char)ans;
+//                System.out.print(finalAns + " ");
+//            }
+//            // part 3
+//            for (int col = 1; col <= row - 1; col++){
+//                char toPrint = (char) (row + 'A' - 2);
+//                System.out.print(toPrint + " ");
+//                toPrint--;
+//            }
+//            System.out.println();
+//        }
     }
 }
