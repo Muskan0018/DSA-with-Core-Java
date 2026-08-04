@@ -9,9 +9,18 @@ public class Student {
     public String name;
     public int nos;
 
-    // Constructor
+    // Default Constructor
     public Student() {
         System.out.println("Student default constructor called");
+    }
+
+    // Parameterized Constructor
+    public Student(int id, int age, String name, int nos) {
+        System.out.println("Student parameterized constructor called");
+        this.id = id;
+        this.age = age;
+        this.name = name;
+        this.nos = nos;
     }
 
     // Methods or Behavior
