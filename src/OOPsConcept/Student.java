@@ -23,6 +23,15 @@ public class Student {
         this.nos = nos;
     }
 
+    // Copy Constructor
+    public Student(Student srcobj) {  // srcobj -> stud
+        System.out.println("Student copy constructor called");
+        this.id = srcobj.id;
+        this.age = srcobj.age;
+        this.name = srcobj.name;
+        this.nos = srcobj.nos;
+    }
+
     // Methods or Behavior
     public void study() {
         System.out.println("Studying");

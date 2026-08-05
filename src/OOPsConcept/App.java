@@ -28,5 +28,17 @@ public class App {
         stud.bunk();
         stud.sleep();
         stud.study();
+
+
+
+//        Copy Constructor
+//        Student cop = new Student(stud);
+//        System.out.println(cop.id);
+//        System.out.println(cop.age);
+//        System.out.println(cop.name);
+//        System.out.println(cop.nos);
+//
+//        cop.sleep();
+
     }
 }
