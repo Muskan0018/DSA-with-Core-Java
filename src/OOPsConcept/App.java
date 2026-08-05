@@ -19,15 +19,20 @@ public class App {
 
 
 //        Parameterized Constructor
-        Student stud = new Student(1, 20, "Bagguu", 4);
-        System.out.println(stud.id);
-        System.out.println(stud.age);
-        System.out.println(stud.name);
-        System.out.println(stud.nos);
+            // Encapsulation
+        Student stud = new Student(1, 20, "Anushka", 4, "Virat");
+        System.out.println("Id: " + stud.getId());
+        System.out.println("Age: " + stud.getAge());
+        System.out.println("Name: " + stud.getName());
+        System.out.println("Nos: " + stud.getNos());
+        System.out.println("Bf: " + stud.getBf());
 
-        stud.bunk();
-        stud.sleep();
-        stud.study();
+        stud.setAge(30);
+
+//        stud.bunk();
+//        stud.sleep();
+//        stud.study();
+//        stud.bfChatting();
 
 
 
