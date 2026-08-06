@@ -2,13 +2,20 @@ package OOPsConcept.Inheritance;
 
 // Inheritance
 
-public class Vehicle {
+public class Vehicle {       // Parent Class
 
     public String name;
     public String model;
     public int noOfTyres;
 
- // Parameterize COnstructor
+    // Default Constructor
+    Vehicle() {
+        this.name = "";
+        this.model = "";
+        this.noOfTyres = -1;
+    }
+
+ // Parameterize Constructor
     Vehicle(String name, String  model, int noOfTyres) {
         this.name = name;
         this.model = model;
