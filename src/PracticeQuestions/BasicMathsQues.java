@@ -63,6 +63,15 @@ public class BasicMathsQues {
         return sum;
     }
 
+// Factorial
+    static int factorial(int n) {
+        int fact = 1;
+        for (int i = 2; i <= n; i++) {
+            fact *= i;
+        }
+        return fact;
+    }
+
 
    public static void main(String[] args) {
 
@@ -74,6 +83,8 @@ public class BasicMathsQues {
 //       System.out.println("Sum of natural numbers from 0 to n: " + sumOfNaturalNumber(10));
 
 //       System.out.println("Sum of all prime numbers from 1 to n: " + sumOfPrime(10));
+
+       System.out.println("Factorial is: " + factorial(5));
 
     }
 }
