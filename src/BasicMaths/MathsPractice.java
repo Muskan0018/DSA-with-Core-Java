@@ -233,7 +233,7 @@ public class MathsPractice {
 //        System.out.println(isPrimeOrNot(num));
 
 //        System.out.println("GCD of a and b is: " + getGDC(18, 12));
-
+//
 //        System.out.println("LCM of a and b is: " + getLCM(18, 12));
 
 //        System.out.println(isArmstrongNumber(153));
