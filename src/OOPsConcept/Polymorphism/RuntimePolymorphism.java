@@ -5,6 +5,8 @@ package OOPsConcept.Polymorphism;
 
 class Shape {
 
+    String shape;
+
     public void draw() {
         System.out.println("Generic shape drawing...");
     }
@@ -36,11 +38,17 @@ public class RuntimePolymorphism {
         Rectangle r = new Rectangle();
         r.draw();
 
- // Dynamic Method Dispatch is the mechanism Java uses to decide at runtime which overridden method should be called.
+ // Dynamic Method Dispatch (Upcasting)  is the mechanism Java uses to decide at runtime which overridden method should be called.
 
 // Parent reference + child object → Java chooses the child's overridden method at runtime.
         Shape s = new Rectangle();
         s.draw();
+
+   // Downcasting
+        Rectangle cir = (Rectangle)s;
+        cir.shape = "Circle";
+        System.out.println(cir.shape);
+        cir.draw();
 
     }
 }
