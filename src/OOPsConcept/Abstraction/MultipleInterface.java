@@ -6,7 +6,7 @@ import java.io.*;
 
 // Add interface
 interface Add{
-    int add(int a,int b);
+    int add(int a,int b);    // by default public and abstract
 }
 
 // Sub interface
