@@ -2,7 +2,7 @@ package GFG_DSA_StepByStep.Basics.EasyRecursion;
 
 //Given an positive integer n, print numbers from 1 to n without using loops.
 
-public class WithoutLoop {
+public class Print1toN {
 
     static void printWithoutLoop(int n) {
         if (n == 0) {
