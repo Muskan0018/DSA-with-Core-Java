@@ -25,7 +25,7 @@ public class ListExample {
         list.remove(4);
         System.out.println("Remove the specified element from list: " + list);
 
-        System.out.println("---------------------------------------------");
+        System.out.println("--------------------------------------------------------------");
 
         // addAll() -> adds all the elements of specified Collection to the Collection
         List<Integer> list2 = new ArrayList<>();
@@ -53,7 +53,7 @@ public class ListExample {
         System.out.println("List2 after: " + list2);
         System.out.println("size of List2: " + list2.size());
 
-        System.out.println("---------------------------------------------");
+        System.out.println("--------------------------------------------------------");
 
         // iterator() -> returns iterator object that can be used to sequentially access the elements of lists
         // i want to traverse list using iterator
@@ -64,7 +64,7 @@ public class ListExample {
             System.out.println("Element: " + iterator.next());
         }
 
-        System.out.println("---------------------------------------------");
+        System.out.println("----------------------------------------------------------");
 
         List<Integer> list3 = new ArrayList<>();
 
@@ -107,6 +107,11 @@ public class ListExample {
 
         ArrayList<Integer> newList = (ArrayList<Integer>) list.clone();
         System.out.println("New List: " + newList);
+
+        // ensureCapacity() -> Specifies the total element the arrayList can contain
+        ArrayList<Integer> marks = new ArrayList<>();
+        marks.ensureCapacity(100);
+        
 
     }
 
