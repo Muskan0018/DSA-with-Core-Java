@@ -54,6 +54,8 @@ public class ListExample {
         System.out.println("List2 after: " + list2);
         System.out.println("size of List2: " + list2.size());
 
+
+        // iterator() -> returns iterator object that can be used to sequentially access the elements of lists
         // i want to traverse list using iterator
         Iterator<Integer> iterator = list.iterator();
         // iterator an a method called hasNext().
@@ -78,7 +80,14 @@ public class ListExample {
         System.out.println("list3 after set method: " + list3);
 
         // toArray() -> Converts a list into an array
-        list3.toArray();
-        System.out.println("toArray used: " + list3);
+        Object[] arr  = list3.toArray();
+        for (Object obj : arr) {
+            System.out.println(obj);
+        }
+
+        // contains() -> return true if a list contains specific element
+        System.out.println("contains method: " + list3.contains(14));
+
     }
+
 }
