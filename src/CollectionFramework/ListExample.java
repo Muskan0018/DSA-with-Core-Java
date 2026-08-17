@@ -62,5 +62,23 @@ public class ListExample {
             System.out.println("Element: " + iterator.next());
         }
 
+
+        List<Integer> list3 = new ArrayList<>();
+
+        list3.add(11);
+        list3.add(12);
+        list3.add(14);
+        System.out.println("List3: " + list3);
+
+        // get() -> helps to randomly access elements from list
+        System.out.println("get() method used: " + list3.get(2));  // it take index no.
+
+        // set() ->
+        list3.set(1, 13);
+        System.out.println("list3 after set method: " + list3);
+
+        // toArray() -> Converts a list into an array
+        list3.toArray();
+        System.out.println("toArray used: " + list3);
     }
 }
