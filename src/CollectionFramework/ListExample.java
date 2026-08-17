@@ -104,7 +104,10 @@ public class ListExample {
 
         // clone() -> creates a new arrayList with the same element, size and capacity
         // clone() method do shallow copy only (Shallow copy copies the references.)
-//        list.clone();
+
+        ArrayList<Integer> newList = (ArrayList<Integer>) list.clone();
+        System.out.println("New List: " + newList);
+
     }
 
 }
