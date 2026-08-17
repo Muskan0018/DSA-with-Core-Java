@@ -1,9 +1,6 @@
 package CollectionFramework;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 public class ListExample {
     public static void main(String[] args) {
@@ -22,11 +19,13 @@ public class ListExample {
         list.add(17);
         list.add(22);
         list.add(88);
-        System.out.println("Add the specified element to the list: " + list);
+        System.out.println("list: " + list);
 
         // remove() -> remove the specified element from the collection
         list.remove(4);
         System.out.println("Remove the specified element from list: " + list);
+
+        System.out.println("---------------------------------------------");
 
         // addAll() -> adds all the elements of specified Collection to the Collection
         List<Integer> list2 = new ArrayList<>();
@@ -35,7 +34,7 @@ public class ListExample {
         list2.add(20);
         list2.add(30);
         list2.add(40);
-        System.out.println("Add the specified elements to List2: " + list2);
+        System.out.println("List2: " + list2);
 
         list.addAll(list2);
 
@@ -54,6 +53,7 @@ public class ListExample {
         System.out.println("List2 after: " + list2);
         System.out.println("size of List2: " + list2.size());
 
+        System.out.println("---------------------------------------------");
 
         // iterator() -> returns iterator object that can be used to sequentially access the elements of lists
         // i want to traverse list using iterator
@@ -64,6 +64,7 @@ public class ListExample {
             System.out.println("Element: " + iterator.next());
         }
 
+        System.out.println("---------------------------------------------");
 
         List<Integer> list3 = new ArrayList<>();
 
@@ -88,6 +89,22 @@ public class ListExample {
         // contains() -> return true if a list contains specific element
         System.out.println("contains method: " + list3.contains(14));
 
+        System.out.println("---------------------------------------------");
+
+        list.add(60);
+        System.out.println("updated list: " + list);
+
+        // sort() -> sort an ArrayList
+        Collections.sort(list);  // ascending order
+        System.out.println("sorted list in ascending order: " + list);
+
+        Collections.sort(list.reversed());
+//        Collections.sort(list, Collections.reverseOrder());
+        System.out.println("sorted list in descending order: " + list);
+
+        // clone() -> creates a new arrayList with the same element, size and capacity
+        // clone() method do shallow copy only (Shallow copy copies the references.)
+//        list.clone();
     }
 
 }
