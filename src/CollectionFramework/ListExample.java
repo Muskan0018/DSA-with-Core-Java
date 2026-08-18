@@ -111,7 +111,13 @@ public class ListExample {
         // ensureCapacity() -> Specifies the total element the arrayList can contain
         ArrayList<Integer> marks = new ArrayList<>();
         marks.ensureCapacity(100);
+
+        // isEmpty() -> checks if the arrayList is empty
+        System.out.println(newList.isEmpty());
+        System.out.println(marks.isEmpty());
+
         
+
 
     }
 
