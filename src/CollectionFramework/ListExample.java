@@ -113,10 +113,11 @@ public class ListExample {
         marks.ensureCapacity(100);
 
         // isEmpty() -> checks if the arrayList is empty
-        System.out.println(newList.isEmpty());
-        System.out.println(marks.isEmpty());
+        System.out.println("is newlist is empty: "+ newList.isEmpty());
+        System.out.println("is marks is empty: " + marks.isEmpty());
 
-        
+        // indexOf() -> Searches a specified element in an arraylist and returns the index of the element
+        System.out.println("indexOf: " + newList.indexOf(18));
 
 
     }
