@@ -12,6 +12,11 @@ public class LinkedListExample {
         list.add(17);
         list.add(22);
         list.add(88);
+        list.add(25);
+        list.add(18);
+        list.add(29);
+        list.add(24);
+        list.add(18);
         System.out.println("list: " + list);
 
         // remove() -> remove the specified element from the collection
@@ -112,6 +117,9 @@ public class LinkedListExample {
         // indexOf() -> Searches a specified element in an arraylist and returns the index of the element
         System.out.println(list);
         System.out.println("indexOf: " + list.indexOf(18));
+
+        // lastIndexOf() -> returns the index of the last occurrence of the element
+        System.out.println("lastIndexOf(): " + list.lastIndexOf(18));
 
     }
 }
