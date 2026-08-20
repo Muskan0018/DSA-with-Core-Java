@@ -121,5 +121,49 @@ public class LinkedListExample {
         // lastIndexOf() -> returns the index of the last occurrence of the element
         System.out.println("lastIndexOf(): " + list.lastIndexOf(18));
 
+        list.remove(0);
+        list.remove(2);
+        list.remove(6);
+        list.remove(1);
+        list.remove(5);
+        list.remove(4);
+        System.out.println(list);
+
+        System.out.println("------------------------- LinkedList as Queue and Deque (METHODS) -----------------------");
+
+        // addFirst() -> adds specified element at the beginning of the LinkedList
+        list.addFirst(45);
+        System.out.println("addFirst(): " + list);
+
+        // addLast() -> adds specified element at the end of the LinkedList
+        list.addLast(17);
+        System.out.println("addLast(): " + list);
+
+        // removeFirst() -> removes the first element
+        list.removeFirst();
+        System.out.println("removeFirst(): " + list);
+
+        // removeLast() -> removes the last element
+        list.removeLast();
+        System.out.println("removeLast(): " + list);
+
+        // getFirst() -> returns the first element
+        System.out.println("getFirst(): " + list.getFirst());
+
+        // getLast() -> returns the last element
+        System.out.println("getLast(): " + list.getLast());
+
+        // peek() -> returns the first element (head) of the LinkedList
+        list.peek();
+        System.out.println("peek(): " + list);
+
+        // poll() -> returns and removes the first element from the LinkedList
+        System.out.println("before poll(): " + list);
+        System.out.println("polling: " + list.poll());
+        System.out.println("after poll(): " + list);
+
+        // offer() -> adds the specified element at the end of the LinkedList
+        list.offer(100);
+        System.out.println("offer(): " + list);
     }
 }
