@@ -47,7 +47,7 @@ public class ListExample {
         // size() -> returns the size of the list (Collection)
         System.out.println("Size of list: " + list.size());
 
-        // clear() -> removes all the elements of the COllection (list)
+        // clear() -> removes all the elements of the Collection (list)
         System.out.println("List2 before: " + list2);
         list2.clear();
         System.out.println("List2 after: " + list2);
