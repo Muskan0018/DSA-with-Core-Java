@@ -241,17 +241,17 @@ public class ArrayDequeExample {
                  * =========================================================
                  */
 
-//                System.out.println("\nUsing Iterator:");
-//
-//                var iterator = names.iterator();
-//
-//                while (iterator.hasNext()) {
-//
-//                    // next() returns the next element
-//                    String name = iterator.next();
-//
-//                    System.out.println(name);
-//                }
+                System.out.println("\nUsing Iterator:");
+
+                var iterator = names.iterator();
+
+                while (iterator.hasNext()) {
+
+                    // next() returns the next element
+                    String name = iterator.next();
+
+                    System.out.println(name);
+                }
 
 
                 /*
