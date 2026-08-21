@@ -1,24 +1,22 @@
-package CollectionFramework;
+package CollectionFramework.List;
 
 import java.util.*;
 
-public class ListExample {
+public class LinkedListExample {
     public static void main(String[] args) {
 
-        // List or Collection -> Interface
+        LinkedList<Integer> list = new LinkedList<>();
 
-        // ArrayList -> Concrete Class
-
-        ArrayList<Integer> list = new ArrayList<>();   //we can create either taking the reference of ArrayList<> or List<> or Collection<>
-//        List<Integer> list = new ArrayList<>();
-//        Collection<Integer> collection = new ArrayList<>();
-
-        // add() -> insert the specified element to the collection
         list.add(18);
         list.add(45);
         list.add(17);
         list.add(22);
         list.add(88);
+        list.add(25);
+        list.add(18);
+        list.add(29);
+        list.add(24);
+        list.add(18);
         System.out.println("list: " + list);
 
         // remove() -> remove the specified element from the collection
@@ -28,7 +26,7 @@ public class ListExample {
         System.out.println("--------------------------------------------------------------");
 
         // addAll() -> adds all the elements of specified Collection to the Collection
-        List<Integer> list2 = new ArrayList<>();
+        LinkedList<Integer> list2 = new LinkedList<>();
 
         list2.add(10);
         list2.add(20);
@@ -47,7 +45,7 @@ public class ListExample {
         // size() -> returns the size of the list (Collection)
         System.out.println("Size of list: " + list.size());
 
-        // clear() -> removes all the elements of the Collection (list)
+        // clear() -> removes all the elements of the COllection (list)
         System.out.println("List2 before: " + list2);
         list2.clear();
         System.out.println("List2 after: " + list2);
@@ -94,7 +92,7 @@ public class ListExample {
         list.add(60);
         System.out.println("updated list: " + list);
 
-        // sort() -> sort an ArrayList
+        // sort() -> sort an LinkedList
         Collections.sort(list);  // ascending order
         System.out.println("sorted list in ascending order: " + list);
 
@@ -104,22 +102,68 @@ public class ListExample {
 
         // clone() -> creates a new arrayList with the same element, size and capacity
         // clone() method do shallow copy only (Shallow copy copies the references.)
+        // clone() method is not possible to use inside the LinkedList
+//        LinkedList<Integer> newList = (LinkedList<Integer>) list.clone();
+//        System.out.println("New List: " + newList);
 
-        ArrayList<Integer> newList = (ArrayList<Integer>) list.clone();
-        System.out.println("New List: " + newList);
-
-        // ensureCapacity() -> Specifies the total element the arrayList can contain
+        // ensureCapacity() -> Specifies the total element the LinkedList can contain
         ArrayList<Integer> marks = new ArrayList<>();
         marks.ensureCapacity(100);
 
         // isEmpty() -> checks if the arrayList is empty
-        System.out.println("is newlist is empty: "+ newList.isEmpty());
+//        System.out.println("is newlist is empty: "+ newList.isEmpty());
         System.out.println("is marks is empty: " + marks.isEmpty());
 
         // indexOf() -> Searches a specified element in an arraylist and returns the index of the element
-        System.out.println("indexOf: " + newList.indexOf(18));
+        System.out.println(list);
+        System.out.println("indexOf: " + list.indexOf(18));
 
+        // lastIndexOf() -> returns the index of the last occurrence of the element
+        System.out.println("lastIndexOf(): " + list.lastIndexOf(18));
 
+        list.remove(0);
+        list.remove(2);
+        list.remove(6);
+        list.remove(1);
+        list.remove(5);
+        list.remove(4);
+        System.out.println(list);
+
+        System.out.println("------------------------- LinkedList as Queue and Deque (METHODS) -----------------------");
+
+        // addFirst() -> adds specified element at the beginning of the LinkedList
+        list.addFirst(45);
+        System.out.println("addFirst(): " + list);
+
+        // addLast() -> adds specified element at the end of the LinkedList
+        list.addLast(17);
+        System.out.println("addLast(): " + list);
+
+        // removeFirst() -> removes the first element
+        list.removeFirst();
+        System.out.println("removeFirst(): " + list);
+
+        // removeLast() -> removes the last element
+        list.removeLast();
+        System.out.println("removeLast(): " + list);
+
+        // getFirst() -> returns the first element
+        System.out.println("getFirst(): " + list.getFirst());
+
+        // getLast() -> returns the last element
+        System.out.println("getLast(): " + list.getLast());
+
+        // peek() -> returns the first element (head) of the LinkedList
+        list.peek();
+        System.out.println("peek(): " + list);
+
+        // poll() -> returns and removes the first element from the LinkedList
+        System.out.println("before poll(): " + list);
+        System.out.println("polling: " + list.poll());
+        System.out.println("after poll(): " + list);
+
+        // offer() -> adds the specified element at the end of the LinkedList
+        list.offer(100);
+        System.out.println("offer(): " + list);
     }
-
 }
