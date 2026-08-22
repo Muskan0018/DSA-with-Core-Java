@@ -12,6 +12,7 @@ public class QueueByLinkedList {
          * =========================================================
          *
          * We use:
+         * All Basic Methods +
          * offer()  -> (insertion) add to the top
          * poll()   -> (deletion) remove from the top
          * peek()  -> (accessing the front element) see the top without removing
