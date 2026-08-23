@@ -18,6 +18,7 @@ public class QueueByPriorityQueue {
          * peek()  -> (accessing the front element) see the top without removing
          */
 
+        // Priority Queue for Integer
 
         // PriorityQueue implementation
 //        Queue<Integer> pq = new PriorityQueue<>();
@@ -44,5 +45,6 @@ public class QueueByPriorityQueue {
         System.out.println("poll 2: " + pq.poll());
         System.out.println("Queue after poll 2: " + pq);
 
+        // Priority Queue for String
     }
 }
