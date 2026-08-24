@@ -45,6 +45,9 @@ public class QueueByPriorityQueue {
         System.out.println("poll 2: " + pq.poll());
         System.out.println("Queue after poll 2: " + pq);
 
-        // Priority Queue for String
+        System.out.println("---------------------------------------------------------------------");
+
+        // Priority Queue for String -> write your own Comaprator for comparing Strings.
+
     }
 }
