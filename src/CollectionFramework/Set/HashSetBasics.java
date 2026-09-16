@@ -3,6 +3,18 @@ package CollectionFramework.Set;
 import java.util.HashSet;
 import java.util.Set;
 
+/*
+ * =========================================================
+ * PART 1: HashSet
+ * =========================================================
+ *
+ * HashSet is a class in Java that implements the Set interface.
+ * It is used to store unique elements and does not maintain insertion order.
+ *
+ * retainAll() - retains all the elements in the set that are also present in another specified set (give the common elements of the both sets)
+ * containsAll() - return true if the Set contains all the elements of the specified collection
+ */
+
 public class HashSetBasics {
    public static void main(String[] args) {
 
