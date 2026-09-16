@@ -1,4 +1,6 @@
 package CollectionFramework.Set;
+import java.util.LinkedHashSet;
+import java.util.Set;
 
 
 /*
@@ -14,12 +16,11 @@ package CollectionFramework.Set;
  * containsAll() - return true if the Set contains all the elements of the specified collection
  */
 
-import java.util.Set;
 
-public class LinkedHashSet {
+public class LinkedHashSetBasics {
     public static void main(String[] args) {
 
-        Set<Integer> linkset = new java.util.LinkedHashSet<>();
+        Set<Integer> linkset = new LinkedHashSet<>();
 
         linkset.add(50);
         linkset.add(10);
