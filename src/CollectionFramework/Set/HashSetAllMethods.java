@@ -2,7 +2,6 @@ package CollectionFramework.Set;
 
 import java.util.Iterator;
 import java.util.HashSet;
-import java.util.Set;
 
 /*
  * =========================================================
@@ -16,7 +15,7 @@ import java.util.Set;
  * containsAll() - return true if the Set contains all the elements of the specified collection
  */
 
-public class HashSetBasics {
+public class HashSetAllMethods {
    public static void main(String[] args) {
 
                // =========================================================
