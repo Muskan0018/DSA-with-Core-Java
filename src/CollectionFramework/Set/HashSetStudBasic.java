@@ -16,5 +16,6 @@ public class HashSetStudBasic {
         stud.add(s3);
 
         System.out.println(stud);
+        System.out.println("That's why we override these two methods- equals() & hashCode()");
     }
 }
