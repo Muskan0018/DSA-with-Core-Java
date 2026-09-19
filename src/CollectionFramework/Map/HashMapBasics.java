@@ -25,10 +25,14 @@ public class HashMapBasics {
 
     /* For Insertion
     *
-     */
-        mapping.put("in", "India");
+    * put(K,V)- Insert the association of a key K and a value V into the Map
+    * If key is already present, the new value replaces the old value
+    */
+        mapping.put("in", "India1");
         mapping.put("en", "England");
         mapping.put("us", "United States");
+        mapping.put("nz", "NewZeland");
+        mapping.put("in", "India");    // If key is already present, the new value replaces the old value
         System.out.println("Map: " + mapping);
     }
 }
