@@ -40,9 +40,8 @@ public class HashMapBasics {
         county.put("br", "Brazil");
         System.out.println("Before: " + county);
 
-    /* putAll() -Inserts all the entries
-    *
-    */
+    // putAll() -Inserts all the entries from Specific Map to this Map
+        
         county.putAll(mapping);
         System.out.println("Afer putAll(): " + county);
 
