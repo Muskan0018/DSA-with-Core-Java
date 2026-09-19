@@ -33,7 +33,19 @@ public class HashMapBasics {
         mapping.put("us", "United States");
         mapping.put("nz", "NewZeland");
         mapping.put("in", "India");    // If key is already present, the new value replaces the old value
-        System.out.println("Map: " + mapping);
+        System.out.println("Map1: " + mapping);
+
+        Map<String, String> county = new HashMap<>();
+
+        county.put("br", "Brazil");
+        System.out.println("Before: " + county);
+
+    /* putAll() -Inserts all the entries
+    *
+    */
+        county.putAll(mapping);
+        System.out.println("Afer putAll(): " + county);
+
     }
 }
 
