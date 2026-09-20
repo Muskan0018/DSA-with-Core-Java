@@ -41,9 +41,11 @@ public class HashMapBasics {
         System.out.println("Before: " + county);
 
     // putAll() -Inserts all the entries from Specific Map to this Map
-        
+
         county.putAll(mapping);
         System.out.println("Afer putAll(): " + county);
+
+    // putIf
 
     }
 }
