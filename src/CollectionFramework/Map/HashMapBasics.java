@@ -149,6 +149,8 @@ public class HashMapBasics {
         for(Map.Entry<Integer, String> entry : players.entrySet()) {
             System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue());
         }
+
+        System.out.println("--------------------------------------------------------------------------------");
     }
 }
 
