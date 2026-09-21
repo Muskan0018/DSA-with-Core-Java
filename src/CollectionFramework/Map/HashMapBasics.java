@@ -136,6 +136,19 @@ public class HashMapBasics {
         System.out.println("All Keys & Values: " + country.entrySet());
 
         System.out.println("---------------------------------------- Methods Completed ----------------------------------");
+
+        System.out.println("----------------------------- ITERATING OVER A MAP ---------------------------------------------");
+
+        Map<Integer, String> players = new HashMap<>();
+
+        players.put(1, "Virat");
+        players.put(2, "Rohit");
+        players.put(3, "ABD");
+        players.put(4, "Salty");
+
+        for(Map.Entry<Integer, String> entry : players.entrySet()) {
+            System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue());
+        }
     }
 }
 
