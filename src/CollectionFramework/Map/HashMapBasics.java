@@ -29,8 +29,12 @@ public class HashMapBasics {
     * If key is already present, the new value replaces the old value
     */
         mapping.put("in", "India1");
+        mapping.put("aus", "Australia");
+        mapping.put("jap", "Japan");
+        mapping.put("nep", "Nepal");
+        mapping.put("afg", "Afganistan");
         mapping.put("en", "England");
-        mapping.put("us", "United States");
+        mapping.put("us", "United States of America");
         mapping.put("nz", "NewZealand");
         mapping.put("in", "India");    // If key is already present, the new value replaces the old value
         System.out.println("Map1: " + mapping);
@@ -66,11 +70,57 @@ public class HashMapBasics {
      */
         System.out.println("Defualt: " + country.getOrDefault("un", "United Nation"));
 
+        System.out.println("--------------------------------------------------------------------------");
+
     // containsKey(K) - Check it the specified key k is present in the map or not.
         System.out.println("Key Contains: " + country.containsKey("in"));
 
+        System.out.println("--------------------------------------------------------------------------");
+
     // containsValue(V) -  Check it the specified value V is present in the map or not.
         System.out.println("Value Contains: " + country.containsValue("NewZealand"));
+
+        System.out.println("--------------------------------------------------------------------------");
+
+        System.out.println("Map: " + country);
+
+    // replace(K,V) - Replace the value of the Key K with the new specified value V.
+        country.replace("ind", "Idonesia");
+        System.out.println("Replace value of the key: " + country);
+
+        System.out.println("--------------------------------------------------------------------------");
+    // replace(K, oldValue, newValue) - Replaces the oldValue of the key K with the newValue.
+        country.replace("us", "United States of America", "United States");
+        System.out.println("Replace the old val with new val: " + country);
+
+        System.out.println("--------------------------------------------------------------------------");
+
+    // remove(K) - Removes the entry from the map represented by the Key K.
+        country.remove("ind");
+        System.out.println("Remove: " + country);
+
+        System.out.println("--------------------------------------------------------------------------");
+
+    // remove(K, V) - Removes the enty from the map that has key K associated with the value V.
+        country.remove("us", "United States");
+        System.out.println("Remove from key & Value: " + country);
+
+        System.out.println("--------------------------------------------------------------------------");
+
+    // keySet() - Returns a set of all the Keys present in a map.
+        System.out.println("All Keys: " + country.keySet());
+
+        System.out.println("--------------------------------------------------------------------------");
+
+    // values() - Returns a set of all the Values present in a map.
+        System.out.println("All Value: " + country.values());
+
+        System.out.println("--------------------------------------------------------------------------");
+
+    // entrySet() - Returns a set of all the Key/Value mapping present in a map.
+        System.out.println("All Keys & Values: " + country.entrySet());
+
+        System.out.println("--------------------------------------------------------------------------");
     }
 }
 
