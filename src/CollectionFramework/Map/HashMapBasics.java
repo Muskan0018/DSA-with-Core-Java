@@ -34,24 +34,32 @@ public class HashMapBasics {
         mapping.put("nep", "Nepal");
         mapping.put("afg", "Afganistan");
         mapping.put("en", "England");
-        mapping.put("us", "United States of America");
+        mapping.put("us", "United State");
         mapping.put("nz", "NewZealand");
         mapping.put("in", "India");    // If key is already present, the new value replaces the old value
         System.out.println("Map1: " + mapping);
+
+        System.out.println("--------------------------------------------------------------------------");
 
         Map<String, String> country = new HashMap<>();
 
         country.put("br", "Brazil");
         System.out.println("Before: " + country);
 
+        System.out.println("--------------------------------------------------------------------------");
+
     // putAll() - Inserts all the entries from Specific Map to this Map
 
         country.putAll(mapping);
         System.out.println("Afer putAll(): " + country);
 
+        System.out.println("--------------------------------------------------------------------------");
+
     // remove
         country.remove("us");
         System.out.println("Remove: " + country);
+
+        System.out.println("--------------------------------------------------------------------------");
 
     // putIfAbsent(K, V)- Insert the association if the key K is not already associated with the value V.
         country.putIfAbsent("us", "United States");
@@ -60,10 +68,14 @@ public class HashMapBasics {
         country.putIfAbsent("ind", "India");
         System.out.println("updated: " + country);
 
+        System.out.println("--------------------------------------------------------------------------");
+
     /* get(K) - Returns the value associated with the specified key K.
                 If the key is not found, it returns null.
      */
         System.out.println("get(): " + country.get("br"));
+
+        System.out.println("--------------------------------------------------------------------------");
 
     /*  getorDefault(K, defaultValue) - Returns the value associated with the specified key K.
                                         If the key is not found, it returns the defaultValue.
@@ -84,13 +96,16 @@ public class HashMapBasics {
 
         System.out.println("Map: " + country);
 
+        System.out.println("--------------------------------------------------------------------------");
+
     // replace(K,V) - Replace the value of the Key K with the new specified value V.
         country.replace("ind", "Idonesia");
         System.out.println("Replace value of the key: " + country);
 
         System.out.println("--------------------------------------------------------------------------");
+
     // replace(K, oldValue, newValue) - Replaces the oldValue of the key K with the newValue.
-        country.replace("us", "United States of America", "United States");
+        country.replace("us", "United States", "United States of America");
         System.out.println("Replace the old val with new val: " + country);
 
         System.out.println("--------------------------------------------------------------------------");
@@ -102,7 +117,7 @@ public class HashMapBasics {
         System.out.println("--------------------------------------------------------------------------");
 
     // remove(K, V) - Removes the enty from the map that has key K associated with the value V.
-        country.remove("us", "United States");
+        country.remove("afg", "Afganistan");
         System.out.println("Remove from key & Value: " + country);
 
         System.out.println("--------------------------------------------------------------------------");
@@ -120,7 +135,7 @@ public class HashMapBasics {
     // entrySet() - Returns a set of all the Key/Value mapping present in a map.
         System.out.println("All Keys & Values: " + country.entrySet());
 
-        System.out.println("--------------------------------------------------------------------------");
+        System.out.println("---------------------------------------- Methods Completed ----------------------------------");
     }
 }
 
