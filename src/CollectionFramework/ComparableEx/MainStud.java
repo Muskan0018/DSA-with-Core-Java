@@ -1,8 +1,10 @@
-package CollectionFramework.ComparableAndComparatorEx;
+package CollectionFramework.ComparableEx;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+
+// Comparable - It is used when we want to define the "Natural/Default Ordering" of objects
 
 public class MainStud {
     public static void main(String[] args) {
@@ -20,17 +22,5 @@ public class MainStud {
         Collections.sort(students);
         System.out.println("After sorting: " + students);
 
-
-
-
-//        List<Integer> list = new ArrayList<>();
-//        list.add(18);
-//        list.add(45);
-//        list.add(17);
-//        list.add(7);
-//        System.out.println("list: " + list);
-//
-////        Collections.sort(list);
-////        System.out.println(list);
     }
 }

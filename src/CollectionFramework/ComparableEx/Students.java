@@ -1,4 +1,6 @@
-package CollectionFramework.ComparableAndComparatorEx;
+package CollectionFramework.ComparableEx;
+
+// Comparable - It is used when we want to define the "Natural/Default Ordering" of objects
 
 public class Students implements Comparable<Students> {
     public int age;
