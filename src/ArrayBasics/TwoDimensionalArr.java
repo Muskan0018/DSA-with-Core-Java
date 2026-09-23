@@ -1,4 +1,4 @@
-package ArrayComplete;
+package ArrayBasics;
 
 public class TwoDimensionalArr {
     static void main() {

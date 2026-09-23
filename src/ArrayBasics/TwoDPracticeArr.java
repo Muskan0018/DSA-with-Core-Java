@@ -1,4 +1,4 @@
-package ArrayComplete;
+package ArrayBasics;
 
 public class TwoDPracticeArr {
     static void main() {

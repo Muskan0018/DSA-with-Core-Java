@@ -1,4 +1,4 @@
-package ArrayComplete;
+package ArrayBasics;
 
 public class PracticeArr {
     static void main(String[] args) {
