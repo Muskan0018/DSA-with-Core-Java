@@ -1,6 +1,6 @@
 package CollectionFramework.ComparableAndComparatorEx;
 
-public class Students implements Comparable {
+public class Students implements Comparable<Students> {
     public int age;
     public String name;
     public int weight;
@@ -45,8 +45,18 @@ public class Students implements Comparable {
     }
 
     @Override
-    public int compareTo(Object that) {
+    public int compareTo(Students that) {
         // this method is called for current object
         // we will define our sorting logic
+
+        // sort basis on the age
+
+        // if age is equal
+        if(this.age == that.age) {
+            return this.name.compareTo(that.name);
+        }
+
+//        return this.age - that.age;  // for ascending order
+        return that.age - this.age;    // for descending order
     }
 }
