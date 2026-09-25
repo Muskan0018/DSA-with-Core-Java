@@ -5,7 +5,7 @@ import java.util.Scanner;
 import static java.lang.Math.pow;
 
 /* for reverse(binary): ans = 0;
-                        bit = n & 1; 
+                        bit = n & 1;
                         ans = (bit * pow(10, i)) + ans;
 */
 
@@ -26,11 +26,14 @@ public class DecimalToBinary {
         int i = 0;
 
         while (n != 0) {
-            int bit = n & 1;   // for finding the bit
+            int bit = n & 1;   // find the last binary bit
+
+            // add a bit at current position
             ans = (int)(bit * Math.pow(10, i)) + ans;   // reverse the ans
 
+            // right shift to get next bit
             n = n >> 1;   // right shift (for finding the 2nd bit)
-            i++;
+            i++;         // move to next decimal place
         }
         System.out.println("Answer: " + ans);
 
