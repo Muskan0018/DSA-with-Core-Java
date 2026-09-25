@@ -5,7 +5,7 @@ import java.util.Scanner;
 import static java.lang.Math.pow;
 
 /* for reverse(binary): ans = 0;
-                        bit = n & 1;
+                        bit = n & 1; 
                         ans = (bit * pow(10, i)) + ans;
 */
 
