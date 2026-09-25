@@ -11,17 +11,16 @@ public class NegDecimalToBinary {
             Scanner sc = new Scanner(System.in);
             n = sc.nextInt();
 
-            long ans = 0;
-            long place = 1;
+            String ans = "";
 
             // Process exactly 32 bits
             for (int i = 0; i < 32; i++) {
 
                 int bit = n & 1;       // find the current bit
-                ans = ans + bit * place;
+
+                ans = bit + ans;   // Add bit at the beginning
 
                 n = n >>> 1;           // unsigned right shift
-                place = place * 10;
             }
 
             System.out.println("Answer: " + ans);
