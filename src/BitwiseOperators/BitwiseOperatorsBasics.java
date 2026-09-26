@@ -8,6 +8,7 @@ package BitwiseOperators;
 *                   Same Bits - 0
 *                   Different Bits - 1
 *
+* Bitwise NOT (~) - It flips every bit. (1 -> 0 or 0 -> 1)
 */
 
 public class BitwiseOperatorsBasics {
@@ -21,6 +22,10 @@ public class BitwiseOperatorsBasics {
         System.out.println("Bitwise OR:- " + (a | b));   // 7
 
         System.out.println("Bitwise XOR:- " + (a ^ b));  // 3
+
+        System.out.println("Bitwise NOT:- " + (~a));     // -6
+        System.out.println("Bitwise NOT:- " + (~b));     // -7
+
 
     }
 }
