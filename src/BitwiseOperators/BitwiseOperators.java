@@ -13,8 +13,9 @@ public class BitwiseOperators {
          int a = 5;
          int b = 6;
 
-        System.out.println("Bitwise AND:- " + (a & b));
+        System.out.println("Bitwise AND:- " + (a & b));  // 4
 
-        S
+        System.out.println("Bitwise OR:- " + (a | b));   // 3
+
     }
 }
