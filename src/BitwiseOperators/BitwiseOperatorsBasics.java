@@ -10,7 +10,7 @@ package BitwiseOperators;
 *
 */
 
-public class BitwiseOperators {
+public class BitwiseOperatorsBasics {
     static void main() {
 
          int a = 5;
