@@ -10,7 +10,6 @@ package BitwiseOperators;
 *
 * Bitwise NOT (~) - It flips every bit. (1 -> 0 or 0 -> 1)
 *
-* Left Shift (<<) -
 */
 
 public class BitwiseOperatorsBasics {
