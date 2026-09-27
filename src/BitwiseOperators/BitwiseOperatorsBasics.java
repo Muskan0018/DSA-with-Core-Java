@@ -10,6 +10,7 @@ package BitwiseOperators;
 *
 * Bitwise NOT (~) - It flips every bit. (1 -> 0 or 0 -> 1)
 *
+* Bitwise Left-Shift (<<) - Left Shift operator moves bits to the left
 */
 
 public class BitwiseOperatorsBasics {
@@ -27,6 +28,13 @@ public class BitwiseOperatorsBasics {
         System.out.println("Bitwise NOT:- " + (~a));     // -6
         System.out.println("Bitwise NOT:- " + (~b));     // -7
 
+    // Left-Shift Operator
+        int n = 2;
+        for (int i = 1; i <= 32; i++) {
+            n = n << 1;
+            System.out.println(n);
+            System.out.println();
+        }
 
     }
 }
