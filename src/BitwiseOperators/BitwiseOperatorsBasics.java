@@ -43,9 +43,11 @@ public class BitwiseOperatorsBasics {
 
     // Right-Shift Operator (>>)
         System.out.println("RIGHT-SHIFT OPERATOR");
-        int x = 50;
-        x = x >> 1;
-        System.out.println(x);
+        int x = 100;
+        for(int i = 1; i <= 10; i++) {
+            x = x >> 1;
+            System.out.println(x);
+        }
 
     }
 }
