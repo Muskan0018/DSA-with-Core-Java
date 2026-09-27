@@ -49,5 +49,13 @@ public class BitwiseOperatorsBasics {
             System.out.println(x);
         }
 
+        System.out.println("-------------------------");
+
+    // Unsigned Right-Shift Operator (>>>)
+        System.out.println("UNSIGNED RIGHT-SHIFT OPERATOR");
+        int x1 = -8;
+
+        System.out.println(x1 >> 1);
+        System.out.println(x1 >>> 1);
     }
 }
