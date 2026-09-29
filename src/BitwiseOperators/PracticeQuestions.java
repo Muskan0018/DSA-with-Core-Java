@@ -33,20 +33,26 @@ public class PracticeQuestions {
 
     // Check Power of 2
         // Basic Way
-        int a = 7;
-        int count = 0;
-
-        while (a != 0) {
-            if ((a & 1) != 0) {
-                // ek set-bit mil gyi
-                count++;
-            }
-            // right-shift to remove this bit
-            a = a >> 1;
-        }
-        System.out.println("Set Bit count: " + count);
+//        int a = 7;
+//        int count = 0;
+//
+//        while (a != 0) {
+//            if ((a & 1) != 0) {
+//                // ek set-bit mil gyi
+//                count++;
+//            }
+//            // right-shift to remove this bit
+//            a = a >> 1;
+//        }
+//        System.out.println("Set Bit count: " + count);
 
         // Advance Way by using Formula- { (n & (n - 1)) == 0 }
+        int a1 = 16;
+        if((n&(n-1)) == 0) {
+            System.out.println("Number is Power of 2!!");
+        }else {
+            System.out.println("Number is not a Power of 2!!");
+        }
 
     }
 }
