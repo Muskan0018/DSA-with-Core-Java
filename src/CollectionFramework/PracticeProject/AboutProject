@@ -1,0 +1,40 @@
+====================== PROJECT DETAILS ====================
+
+TO DO:
+
+Build a system that:
+* Fetches users from the database (we'll mock it)
+* Each user has roles (unique)
+
+We want to:
+* Remove inactive users
+* List all active users
+* Count users per role
+
+User:
+* UserName
+* Active/Inactive
+* User Roles
+
+
+ ***** OUTPUT *****
+
+ ================ ALL USERS ================
+
+User{name='MUSKAN', active=true, roles='ADMIN', "Manager'}
+User{name='PRATIKSHA', active=true, roles='VIEWER', "DEVELOPER'}
+User{name='ROHIT', active=false, roles='DEVELOPER'}
+User{name='RICHA', active=false, roles='HR MANAGER'}
+User{name='RISHANK', active=true, roles='TESTER', 'DEVELOPER'}
+
+================ ACITVE USERS ================
+Muskan
+Pratiksha
+Rishank
+
+================ USERS PER ROLES ================
+DEVELOPER : 2
+VIEWER : 1
+TESTER : 1
+ADMIN : 1
+Manager : 1
