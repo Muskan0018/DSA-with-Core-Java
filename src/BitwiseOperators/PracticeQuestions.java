@@ -54,6 +54,8 @@ public class PracticeQuestions {
             System.out.println("Number is not a Power of 2!!");
         }
 
+        System.out.println("-------------------------------------------");
+
      // Swap two numbers without 3rd Variable (By using Bitwise XOR)
 
       /*  Bitwise XOR (^) - It returns 1 when the two bits are different.
@@ -72,8 +74,21 @@ public class PracticeQuestions {
 
         System.out.println("After Swapping the value of a: " + a + " and b: " + b);
 
+        System.out.println("-------------------------------------------");
 
     // Find Unique element (all others appear twice)
 
+        int[] arr = {45, 17, 7, 18, 17, 45, 7};
+
+        int unique = 0;
+
+        for (int num : arr) {
+            unique = unique ^ num;
+        }
+        System.out.println("Unique Number: " + unique);
+
+        System.out.println("-------------------------------------------");
+
+        
     }
 }
