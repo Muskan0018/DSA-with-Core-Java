@@ -33,26 +33,47 @@ public class PracticeQuestions {
 
     // Check Power of 2
         // Basic Way
-//        int a = 7;
+//        int a2 = 7;
 //        int count = 0;
 //
-//        while (a != 0) {
-//            if ((a & 1) != 0) {
+//        while (a2 != 0) {
+//            if ((a2 & 1) != 0) {
 //                // ek set-bit mil gyi
 //                count++;
 //            }
 //            // right-shift to remove this bit
-//            a = a >> 1;
+//            a2 = a2 >> 1;
 //        }
 //        System.out.println("Set Bit count: " + count);
 
-        // Advance Way by using Formula- { (n & (n - 1)) == 0 }
+// Advance Way by using Formula- { (n & (n - 1)) == 0 }
         int a1 = 16;
         if((n&(n-1)) == 0) {
             System.out.println("Number is Power of 2!!");
         }else {
             System.out.println("Number is not a Power of 2!!");
         }
+
+     // Swap two numbers without 3rd Variable (By using Bitwise XOR)
+
+      /*  Bitwise XOR (^) - It returns 1 when the two bits are different.
+                          Same Bits - 0
+                          Different Bits - 1
+       */
+
+        int a = 5;
+        int b = 6;
+
+        System.out.println("Before Swapping the value of a: " + a + " and b: " + b);
+
+        a = a ^ b;    // 5^6 = 3 (0101 ^ 0110 = 0011) means 0011 = 3; now a = 3
+        b = a ^ b;   // 3^6 = 5 (0011 ^ 0110 = 0101) means 0101 = 5; now b = 5
+        a = a ^ b;  // 3^5 = 6 (0011 ^ 0101 = 0110) means 0110 = 6; now a = 6
+
+        System.out.println("After Swapping the value of a: " + a + " and b: " + b);
+
+
+    // Find Unique element (all others appear twice)
 
     }
 }
