@@ -48,7 +48,7 @@ public class PracticeQuestions {
 
 // Advance Way by using Formula- { (n & (n - 1)) == 0 }
         int a1 = 16;
-        if((n&(n-1)) == 0) {
+        if((a1&(a1-1)) == 0) {
             System.out.println("Number is Power of 2!!");
         }else {
             System.out.println("Number is not a Power of 2!!");
@@ -89,6 +89,10 @@ public class PracticeQuestions {
 
         System.out.println("-------------------------------------------");
 
-        
+    // Remove Last Set Bit
+        int p = 10;
+        System.out.println("After removing last bit: " + (p & (p -1)));
+
+        System.out.println("-------------------------------------------");
     }
 }
