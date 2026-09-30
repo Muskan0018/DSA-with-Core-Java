@@ -9,7 +9,7 @@ public class PracticeQuestions {
             System.out.println("EVEN");
         }else {
             System.out.println("ODD");
-        } 
+        }
 
         System.out.println("-------------------------------------------");
 
@@ -32,19 +32,19 @@ public class PracticeQuestions {
         System.out.println("-------------------------------------------");
 
     // Check Power of 2
-        // Basic Way
-//        int a2 = 7;
-//        int count = 0;
-//
-//        while (a2 != 0) {
-//            if ((a2 & 1) != 0) {
-//                // ek set-bit mil gyi
-//                count++;
-//            }
-//            // right-shift to remove this bit
-//            a2 = a2 >> 1;
-//        }
-//        System.out.println("Set Bit count: " + count);
+        // Basic Way [ Count the Set Bit ]
+        int a2 = 7;
+        int count = 0;
+
+        while (a2 != 0) {
+            if ((a2 & 1) != 0) {
+                // ek set-bit mil gyi
+                count++;
+            }
+            // right-shift to remove this bit
+            a2 = a2 >> 1;
+        }
+        System.out.println("Set Bit count: " + count);
 
 // Advance Way by using Formula- { (n & (n - 1)) == 0 }
         int a1 = 16;
@@ -97,5 +97,20 @@ public class PracticeQuestions {
     // Get Last Set Bit
         int n = 10;
         System.out.println("Last Set Bit: " + (n & (-n)));
+
+        System.out.println("-------------------------------------------");
+
+    // Count the Set Bit
+        int set = 7;
+        int bitCount = 0;
+        while (set != 0) {
+            if((set & 1) != 0) {
+                bitCount++;
+            }
+            set = set >> 1;
+        }
+        System.out.println("Set Bit Count: " + bitCount);
+
+        System.out.println("-------------------------------------------");
     }
 }
