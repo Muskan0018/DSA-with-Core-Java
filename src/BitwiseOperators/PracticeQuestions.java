@@ -4,12 +4,12 @@ public class PracticeQuestions {
     static void main() {
 
     // Odd-Even
-        int n = 1;
-        if ((n & 1) == 0) {
+        int num = 1;
+        if ((num & 1) == 0) {
             System.out.println("EVEN");
         }else {
             System.out.println("ODD");
-        }
+        } 
 
         System.out.println("-------------------------------------------");
 
@@ -79,11 +79,10 @@ public class PracticeQuestions {
     // Find Unique element (all others appear twice)
 
         int[] arr = {45, 17, 7, 18, 17, 45, 7};
-
         int unique = 0;
 
-        for (int num : arr) {
-            unique = unique ^ num;
+        for (int nums : arr) {
+            unique = unique ^ nums;
         }
         System.out.println("Unique Number: " + unique);
 
@@ -94,5 +93,9 @@ public class PracticeQuestions {
         System.out.println("After removing last bit: " + (p & (p -1)));
 
         System.out.println("-------------------------------------------");
+
+    // Get Last Set Bit
+        int n = 10;
+        System.out.println("Last Set Bit: " + (n & (-n)));
     }
 }
