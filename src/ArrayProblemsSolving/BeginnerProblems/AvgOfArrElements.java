@@ -1,5 +1,7 @@
 package ArrayProblemsSolving.BeginnerProblems;
 
+// Finding the average of an array elements
+
 public class AvgOfArrElements {
     static double getAverage(int[] arr){
         double sum = 0;
