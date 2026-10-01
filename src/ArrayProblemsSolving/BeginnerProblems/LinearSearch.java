@@ -14,8 +14,8 @@ Search process: 10 → 20 → 30 ✓
 
 So the answer is: Index = 2
 */
-public class SearchForElement {
-    static int searchElement(int[] arr, int target) {
+public class LinearSearch {
+    static int linearSearch(int[] arr, int target) {
         for (int i = 0; i < arr.length; i++){
             if (arr[i] == target){
                 return i;
@@ -32,6 +32,6 @@ public class SearchForElement {
         int[] arr = {10, 12, 14, 16, 18, 20};
         int target = 181;
 //        int result = searchElement(arr, target)
-        System.out.println("Search Element at Index: " + searchElement(arr, target));
+        System.out.println("Search Element at Index: " + linearSearch(arr, target));
     }
 }
