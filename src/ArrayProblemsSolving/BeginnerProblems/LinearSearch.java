@@ -30,7 +30,7 @@ public class LinearSearch {
 
     static void main() {
         int[] arr = {10, 12, 14, 16, 18, 20};
-        int target = 181;
+        int target = 18;
 //        int result = searchElement(arr, target)
         System.out.println("Search Element at Index: " + linearSearch(arr, target));
     }
