@@ -1,5 +1,19 @@
 package ArrayProblemsSolving.BeginnerProblems;
 
+//  Problem: Sum of Positive and Negative Numbers in an Array
+
+/* Given an integer array arr, calculate the sum of all positive numbers and the sum of all negative numbers separately.
+    Return both sums in a new integer array, where:
+       * ans[0] stores the sum of positive numbers.
+       * ans[1] stores the sum of negative numbers.
+Example:
+
+Input: arr = {1, -2, 2, 3, -4, -3, 4, -1};
+
+Output: Sum of Positive Numbers: 10
+        Sum Of Negative Number: -10
+*/
+
 public class SumOfPositiveNegativeNum {
 
     static int[] getPositiveNegativeSum(int[] arr) {
