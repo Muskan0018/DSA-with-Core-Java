@@ -12,6 +12,14 @@ public class MaximumElement {
             }
         }
         return maxValue;
+
+     // Using Math.max(int n1, int n2)
+//        int max = arr[0];
+//        for (int i = 0; i < arr.length; i++) {
+//            max = Math.max(max, arr[i]);
+//        }
+//        return max;
+
     }
 
     static void main() {
