@@ -16,6 +16,7 @@ So the answer is: Index = 2
 */
 public class LinearSearch {
     static int linearSearch(int[] arr, int target) {
+        int size = arr.length;
         for (int i = 0; i < arr.length; i++){
             if (arr[i] == target){
                 return i;
