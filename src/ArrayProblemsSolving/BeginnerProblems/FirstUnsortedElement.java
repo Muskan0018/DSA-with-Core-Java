@@ -8,7 +8,7 @@ public class FirstUnsortedElement {
         for(int i = 0; i < arr.length - 1; i++){    // When i reaches the last index, arr[i + 1] will cause ArrayIndexOutOfBoundsException.
                                                     // // that's why we do this- for(int i = 0; i < arr.length - 1; i++)
 
-            if(arr[i+1] <= arr[i]){         // <= ki jagah < bhi kiya hai, kyunki equal elements hone se increasing order break nahi hota. For example, [1, 2, 2, 4] non-decreasing sorted array hai.
+            if(arr[i+1] < arr[i]){         // <= ki jagah < bhi kiya hai, kyunki equal elements hone se increasing order break nahi hota. For example, [1, 2, 2, 4] non-decreasing sorted array hai.
                 return arr[i+1];
             }
         }
