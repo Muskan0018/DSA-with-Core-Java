@@ -4,7 +4,7 @@ package ArrayProblemsSolving.BeginnerProblems;
 
 public class FirstUnsortedElement {
 
-    static int unsortedElement(int[] arr){
+    static int getUnsortedElement(int[] arr){
         for(int i = 0; i < arr.length - 1; i++){    // When i reaches the last index, arr[i + 1] will cause ArrayIndexOutOfBoundsException.
                                                     // // that's why we do this- for(int i = 0; i < arr.length - 1; i++)
 
@@ -19,6 +19,6 @@ public class FirstUnsortedElement {
 
     static void main() {
         int[] arr = {1, 2, 5, 4, 9};
-        System.out.println("Unsorted Element: " + unsortedElement(arr));
+        System.out.println("Unsorted Element: " + getUnsortedElement(arr));
     }
 }
