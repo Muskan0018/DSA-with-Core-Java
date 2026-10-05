@@ -15,5 +15,7 @@ public class SwapAlternateElement {
 
         }
 
+//        For an odd-sized array like [1,2,3,4,5], the last element remains unchanged: [2,1,4,3,5].
+
     }
 }
