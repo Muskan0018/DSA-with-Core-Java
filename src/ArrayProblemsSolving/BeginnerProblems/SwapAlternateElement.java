@@ -12,21 +12,41 @@ If the array contains an odd number of elements, the last element remains unchan
 */
 
 
+import java.util.Arrays;
+
 public class SwapAlternateElement {
-    static void main (String[] args) {
-        int[] arr = {1, 2, 3, 4, 5, 6};
-        for (int i = 0; i < arr.length - 1; i = i + 2) {     // To handle both even and odd-sized arrays, use:
+//    static void main (String[] args) {
+//        int[] arr = {1, 2, 3, 4, 5, 6};
+//        for (int i = 0; i < arr.length - 1; i = i + 2) {     // To handle both even and odd-sized arrays, use:
+//            int temp = arr[i];
+//            arr[i] = arr[i + 1];
+//            arr[i + 1] = temp;
+//        }
+//        System.out.print("After Swapping Aternate Element: ");
+//        for (int ele : arr) {
+//            System.out.print(ele + " ");
+//
+//        }
+//
+
+    /// /        For an odd-sized array like [1,2,3,4,5], the last element remains unchanged: [2,1,4,3,5].
+//
+//    }
+    public static void swapAlternate(int[] arr) {
+        for (int i = 0; i < arr.length - 1; i += 2) {
             int temp = arr[i];
             arr[i] = arr[i + 1];
             arr[i + 1] = temp;
         }
-        System.out.print("After Swapping Aternate Element: ");
-        for (int ele : arr) {
-            System.out.print(ele + " ");
+    }
 
-        }
+    public static void main(String[] args) {
+        int[] arr = {10, 20, 30, 40, 50};
 
-//        For an odd-sized array like [1,2,3,4,5], the last element remains unchanged: [2,1,4,3,5].
+        System.out.println("Original Array: " + Arrays.toString(arr));
 
+        swapAlternate(arr);
+
+        System.out.println("After Swapping: " + Arrays.toString(arr));
     }
 }
