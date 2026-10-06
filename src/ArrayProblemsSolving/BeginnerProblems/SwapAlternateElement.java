@@ -12,7 +12,6 @@ If the array contains an odd number of elements, the last element remains unchan
 */
 
 
-
 public class SwapAlternateElement {
     static void main (String[] args) {
         int[] arr = {1, 2, 3, 4, 5, 6};
