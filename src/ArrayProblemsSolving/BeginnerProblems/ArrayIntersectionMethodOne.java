@@ -2,7 +2,7 @@ package ArrayProblemsSolving.BeginnerProblems;
 
 import java.util.ArrayList;
 
-public class ArrayIntersection {
+public class ArrayIntersectionMethodOne {
     static void main(String[] args) {
         int[] arr1 = {1,2,2,3};
         int[] arr2 = {2,2,1};
