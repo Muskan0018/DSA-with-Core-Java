@@ -2,6 +2,20 @@ package ArrayProblemsSolving.BeginnerProblems;
 
 import java.util.*;
 
+/*  Problem: Intersection of Two Arrays
+
+Given two integer arrays, return their intersection — the elements that
+appear in both arrays. Usually, each element should appear only once.
+
+Example:
+
+Input: nums1 = [1, 2, 2, 1]
+       nums2 = [2, 2, 3]
+
+Output: [2]
+
+ */
+
 public class ArrayIntersectionMethodTwo {
         public int[] intersection(int[] nums1, int[] nums2) {
 
