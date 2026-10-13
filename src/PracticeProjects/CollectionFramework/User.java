@@ -1,4 +1,4 @@
-package CollectionFramework.PracticeProject;
+package PracticeProjects.CollectionFramework;
 
 import java.util.Set;
 

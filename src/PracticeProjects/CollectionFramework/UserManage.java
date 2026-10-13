@@ -1,8 +1,9 @@
-package CollectionFramework.PracticeProject;
-
-import ArrayBasics.UserInputTwoD;
+package PracticeProjects.CollectionFramework;
 
 import java.util.*;
+
+// Practice Project: Collection Framework
+  // User Management
 
 public class UserManage {
     public static void main(String[] args) {
