@@ -10,6 +10,8 @@ class Library{
         if (booksRequestedCount > availableBooks)
             throw new Exception("Not enough books available");
 
+        if (booksRequestedCount < 0)
+            throw new Exception("You must request atleast one book");
     }
 
 }
