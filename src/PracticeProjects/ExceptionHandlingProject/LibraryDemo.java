@@ -12,11 +12,11 @@ class Library{
             System.out.println("Book Requested: " + books[booksRequested]);
         } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("Exception Occured, you requested a book that does not exist!");
-//        } catch (NullPointerException e) {
-//            System.out.println("Null Pointer Exception");
-//        } finally {
-//            System.out.println("FINALLY BLOCK");
-//        }
+        } catch (NullPointerException e) {
+            System.out.println("Null Pointer Exception");
+        } finally {
+            System.out.println("FINALLY BLOCK");
+        }
     }
 
 }
