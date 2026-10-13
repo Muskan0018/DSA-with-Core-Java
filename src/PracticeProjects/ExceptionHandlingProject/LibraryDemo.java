@@ -30,7 +30,7 @@ public class LibraryDemo {
 }
 
 
-// ------------ throw ------------
+// --------------------- throw ----------------------------
 //public void borrowBooks(int booksRequestedCount) {
 //    try{
 //        if (booksRequestedCount > availableBooks)
@@ -45,7 +45,7 @@ public class LibraryDemo {
 //}
 
 
-// ------------ try-catch ----------
+// ----------------------- try-catch -----------------------
 //public void borrowBooks(int booksRequested) {
 //    try{
 //        int[] books = {101, 102, 103, };
