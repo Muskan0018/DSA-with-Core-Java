@@ -6,17 +6,10 @@ package PracticeProjects.ExceptionHandlingProject;
 class Library{
     int availableBooks = 3;
 
-    public void borrowBooks(int booksRequestedCount) {
-        try{
-            if (booksRequestedCount > availableBooks)
-                throw new Exception("Not enough books available");
-        } catch (ArrayIndexOutOfBoundsException e) {
-            System.out.println("Exception Occured, you requested a book that does not exist!");
-        } catch (Exception e) {
-            System.out.println("Exception!!");
-        } finally {
-            System.out.println("FINALLY BLOCK");
-        }
+    public void borrowBooks(int booksRequestedCount) throws Exception {
+        if (booksRequestedCount > availableBooks)
+            throw new Exception("Not enough books available");
+
     }
 
 }
@@ -25,7 +18,12 @@ public class LibraryDemo {
     public static void main(String[] args) {
 
         Library library = new Library();
-        library.borrowBooks(5);
+        try {
+            library.borrowBooks(5);
+        } catch (Exception e) {
+//            e.printStackTrace();
+            System.out.println("Exception Occured: " + e.getMessage());
+        }
     }
 }
 
