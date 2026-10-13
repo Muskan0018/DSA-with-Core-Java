@@ -6,14 +6,14 @@ package PracticeProjects.ExceptionHandlingProject;
 class Library{
     int availableBooks = 3;
 
-    public void borrowBooks(int booksRequested) {
+    public void borrowBooks(int booksRequestedCount) {
         try{
-            int[] books = {101, 102, 103, };
-            System.out.println("Book Requested: " + books[booksRequested]);
+            if (booksRequestedCount > availableBooks)
+                throw new Exception("Not enough books available");
         } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("Exception Occured, you requested a book that does not exist!");
-        } catch (NullPointerException e) {
-            System.out.println("Null Pointer Exception");
+        } catch (Exception e) {
+            System.out.println("Exception!!");
         } finally {
             System.out.println("FINALLY BLOCK");
         }
@@ -29,3 +29,32 @@ public class LibraryDemo {
     }
 }
 
+
+// ------------ throw ------------
+//public void borrowBooks(int booksRequestedCount) {
+//    try{
+//        if (booksRequestedCount > availableBooks)
+//            throw new Exception("Not enough books available");
+//    } catch (ArrayIndexOutOfBoundsException e) {
+//        System.out.println("Exception Occured, you requested a book that does not exist!");
+//    } catch (Exception e) {
+//        System.out.println("Exception!!");
+//    } finally {
+//        System.out.println("FINALLY BLOCK");
+//    }
+//}
+
+
+// ------------ try-catch ----------
+//public void borrowBooks(int booksRequested) {
+//    try{
+//        int[] books = {101, 102, 103, };
+//        System.out.println("Book Requested: " + books[booksRequested]);
+//    } catch (ArrayIndexOutOfBoundsException e) {
+//        System.out.println("Exception Occured, you requested a book that does not exist!");
+//    } catch (NullPointerException e) {
+//        System.out.println("Null Pointer Exception");
+//    } finally {
+//        System.out.println("FINALLY BLOCK");
+//    }
+//}
