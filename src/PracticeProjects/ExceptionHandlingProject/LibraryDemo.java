@@ -8,7 +8,7 @@ class Library{
 
     public void borrowBooks(int booksRequestedCount) throws Exception {
         if (booksRequestedCount > availableBooks)
-            throw new Exception("Not enough books available");
+            throw new ArrayIndexOutOfBoundsException("Not enough books available");
 
         if (booksRequestedCount < 0)
             throw new Exception("You must request atleast one book");
