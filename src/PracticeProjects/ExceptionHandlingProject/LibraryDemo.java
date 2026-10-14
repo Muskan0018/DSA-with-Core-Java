@@ -3,6 +3,13 @@ package PracticeProjects.ExceptionHandlingProject;
 // Practice Project- 2 (Exception Handling)
   // Library Management
 
+
+class InvalidMemberException extends Exception{
+    public InvalidMemberException(String message) {
+        super(message);
+    }
+}
+
 class BookUnavailableException extends Exception {    // Custom Exception
 
     public BookUnavailableException(String message) {
@@ -13,12 +20,15 @@ class BookUnavailableException extends Exception {    // Custom Exception
 class Library{
     int availableBooks = 3;
 
-    public void borrowBooks(int booksRequestedCount) throws Exception {
+    public void borrowBooks(String memberName, int booksRequestedCount) throws Exception {
         if (booksRequestedCount > availableBooks)
             throw new BookUnavailableException("Not enough books available");
 
         if (booksRequestedCount < 0)
             throw new Exception("You must request atleast one book");
+
+        if (memberName == null || memberName.isEmpty())
+            throw new InvalidMemberException("Invalid Member!!");
     }
 
 }
@@ -28,7 +38,8 @@ public class LibraryDemo {
 
         Library library = new Library();
         try {
-            library.borrowBooks(5);
+            library.borrowBooks("John" , 1);
+            library.borrowBooks(null, 1);
         } catch (BookUnavailableException e) {
             e.printStackTrace();
         }
