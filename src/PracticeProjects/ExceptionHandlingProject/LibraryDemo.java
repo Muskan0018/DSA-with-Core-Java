@@ -3,12 +3,19 @@ package PracticeProjects.ExceptionHandlingProject;
 // Practice Project- 2 (Exception Handling)
   // Library Management
 
+class BookUnavailableException extends Exception {    // Custom Exception
+
+    public BookUnavailableException(String message) {
+        super(message);
+    }
+}
+
 class Library{
     int availableBooks = 3;
 
     public void borrowBooks(int booksRequestedCount) throws Exception {
         if (booksRequestedCount > availableBooks)
-            throw new ArrayIndexOutOfBoundsException("Not enough books available");
+            throw new BookUnavailableException("Not enough books available");
 
         if (booksRequestedCount < 0)
             throw new Exception("You must request atleast one book");
@@ -22,12 +29,42 @@ public class LibraryDemo {
         Library library = new Library();
         try {
             library.borrowBooks(5);
-        } catch (Exception e) {
+        } catch (BookUnavailableException e) {
+            e.printStackTrace();
+        }
+        catch (Exception e) {
 //            e.printStackTrace();
             System.out.println("Exception Occured: " + e.getMessage());
         }
     }
 }
+
+// ------------------ BackUp (throws) ---------------------
+//class Library{
+//    int availableBooks = 3;
+//
+//    public void borrowBooks(int booksRequestedCount) throws Exception {
+//        if (booksRequestedCount > availableBooks)
+//            throw new ArrayIndexOutOfBoundsException("Not enough books available");
+//
+//        if (booksRequestedCount < 0)
+//            throw new Exception("You must request atleast one book");
+//    }
+//
+//}
+//
+//public class LibraryDemo {
+//    public static void main(String[] args) {
+//
+//        Library library = new Library();
+//        try {
+//            library.borrowBooks(5);
+//        } catch (Exception e) {
+////            e.printStackTrace();
+//            System.out.println("Exception Occured: " + e.getMessage());
+//        }
+//    }
+//}
 
 
 // --------------------- throw ----------------------------
