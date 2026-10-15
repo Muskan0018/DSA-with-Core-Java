@@ -49,7 +49,7 @@ public class ReverseArray {
     }
 
     static void main() {
-        int[] arr = {2, 4, 6, 8, 9};
+        int[] arr = {2, 4, 6, 8, 9, 10};
         reverseArray(arr);
     }
 }
