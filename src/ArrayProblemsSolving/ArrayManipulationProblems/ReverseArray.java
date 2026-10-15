@@ -13,6 +13,20 @@ Input: arr = [2, 4, 6, 8, 9]
 Output: [9, 8, 6, 4, 2]
 */
 
+//--------------------SOLUTION--------------------
+
+/*          Approach: Two-Pointer Technique
+
+1. Initialize start = 0 and end = arr.length - 1.
+
+2. While start < end:
+      * Swap arr[start] and arr[end] using a temporary variable.
+      * Increment start.
+      * Decrement end.
+
+3. Print the reversed array
+
+*/
 public class ReverseArray {
 
     static void reverseArray(int[] arr) {
