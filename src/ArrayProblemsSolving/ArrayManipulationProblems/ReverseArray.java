@@ -3,8 +3,8 @@ package ArrayProblemsSolving.ArrayManipulationProblems;
 // Reverse an Array
 
 /* Problem Statement:- Given an array of integers, reverse the order of its elements in place.
-            The first element should become the last, the second element should
-            become the second-to-last, and so on.
+                      The first element should become the last, the second element should
+                      become the second-to-last, and so on.
 
 Example:
 
