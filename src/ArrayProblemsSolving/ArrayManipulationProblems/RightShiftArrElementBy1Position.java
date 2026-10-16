@@ -19,7 +19,7 @@ Space Complexity: O(1)  because we use only one extra variable to store the last
 
 public class RightShiftArrElementBy1Position {
 
-    static void shiftBy1(int[] arr) {
+    static void rightShiftBy1(int[] arr) {
         //step 1: Store last element in temp
         int n = arr.length;
         int temp = arr[n - 1] ;
@@ -35,7 +35,7 @@ public class RightShiftArrElementBy1Position {
     public static void main(String[] args) {
         int[] arr = {10, 20, 30, 40, 50, 60, 70};
 
-        shiftBy1(arr);
+        rightShiftBy1(arr);
 
         System.out.println("Output: " + Arrays.toString(arr) + " ");
 
