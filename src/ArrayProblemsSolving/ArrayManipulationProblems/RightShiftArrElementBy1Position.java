@@ -2,6 +2,8 @@ package ArrayProblemsSolving.ArrayManipulationProblems;
 
 import java.util.Arrays;
 
+//------------------ RIGHT SHIFT ARRAY ELEMENTS BY 1 POSITION TO THE RIGHT --------------------------------
+
 /* Problem Statement: Given an array of N integers, rotate the array to the right by one position.
                       The last element of the array should be moved to the first position, and all
                       remaining elements should shift one position to the right.
@@ -15,7 +17,7 @@ Space Complexity: O(1)  because we use only one extra variable to store the last
 */
 
 
-public class ShiftArrElementBy1Position {
+public class RightShiftArrElementBy1Position {
 
     static void shiftBy1(int[] arr) {
         //step 1: Store last element in temp
