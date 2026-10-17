@@ -15,12 +15,17 @@ Output: 1 7 2 6 3 5 4
 
 */
 
+// USING TWO POINTER
+
 
 public class ExtremeEleInAnAlternateManner {
 
     static void printExtremeElement(int[] arr) {
         int n = arr.length;
+        // 1st pointer
         int i = 0;        // i is set to index 0.
+
+        // 2nd pointer
         int j = n - 1;   // j is set to last index (n-1)
 
         while (i <= j) {
