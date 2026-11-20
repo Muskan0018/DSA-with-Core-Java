@@ -16,6 +16,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Predicate;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class FirstStreamsDemo {
@@ -24,29 +25,38 @@ public class FirstStreamsDemo {
 
         // LIST: EVEN NUMBERS from "numbers" list
 
-        // without using STREAMS
+// 1: without using STREAMS
         List<Integer> evenNumbers1 = new ArrayList<>();
         for (int num : numbers) {
             if (num % 2 == 0) {
                 evenNumbers1.add(num);
             }
         }
-        System.out.println("Even Numbers without Streams: " + evenNumbers1);
+        System.out.println("Even Numbers without Streams 1: " + evenNumbers1);
 
-        // Using STREAMS
+// 2: Using STREAMS (data can be mentioned through Predicate )
         Stream<Integer> integerStream1 = numbers.stream();
-        Stream<Integer> integerStream2 = integerStream1.filter(p);
+        Stream<Integer> integerStream2 = integerStream1.filter(p2);
         List<Integer> evenNumbers2 = integerStream2.toList();
-        System.out.println("Even Number with Streams: " + evenNumbers2);
-    }
+        System.out.println("Even Number with Streams 2 (By using Predicate): " + evenNumbers2);
 
-    static Predicate<Integer> p = new Predicate<Integer>() {
-        @Override
-        public boolean test(Integer integer) {
-            int remainder = integer % 2;
-            if (remainder == 0)
-                return true;
-            return false;
-        }
-    };
+// 3: Using Streams without using "Predicate"
+        List<Integer> evenNumbers3 = numbers.stream()
+                .filter(num ->num % 2 == 0)
+                .toList();
+        System.out.println("Even Number with Streams 3 (without using Predicate): " + evenNumbers3);
+    }
+// Shorthand Version of "Predicate"
+    static Predicate<Integer> p2 = (integer) -> integer % 2 == 0;
+
+// Long Version of "Predicate"
+//    static Predicate<Integer> p = new Predicate<Integer>() {
+//        @Override
+//        public boolean test(Integer integer) {
+//            int remainder = integer % 2;
+//            if (remainder == 0)
+//                return true;
+//            return false;
+//        }
+//    };
 }
