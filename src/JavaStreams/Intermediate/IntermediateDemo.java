@@ -3,7 +3,6 @@ package JavaStreams.Intermediate;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
-import java.util.function.Predicate;
 import java.util.stream.Stream;
 
 public class IntermediateDemo {
@@ -65,6 +64,7 @@ public class IntermediateDemo {
         System.out.println("------------------------- SKIP -----------------------------");
 
 // Skip: Skip the first 2 books
+        System.out.println("DISPLAY AFTER SKIPPING TWO");
         Stream<Book> skipTwoBooks = books.stream()
                 .skip(2);
         skipTwoBooks.forEach(System.out::println);
