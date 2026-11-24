@@ -42,6 +42,11 @@ public class BookStoreChallenge {
                 new Books("Forever Yours", 11.50, 2018, "Romance")
         );
 
+        System.out.println("All Books");
+        books.forEach(System.out::println);
+
+        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+
 //        - Discounted Books: The bookstore is planning a sale.
 //        Identify all books that are priced over $20. Display these books.
         System.out.println("Identify all books that are priced over $20");
@@ -74,6 +79,16 @@ public class BookStoreChallenge {
         System.out.println("Display the books sorted by their prices in ascending order");
         books.stream()
                 .sorted(Comparator.comparingDouble(book -> book.price))
+                .forEach(System.out::println);
+
+        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+
+//        - Rare Books: The bookstore believes there might be rare books in the collection.
+//                A rare book is one where the title has more than 20 characters.
+//                Identify and display these books.
+        System.out.println("A rare book is one where the title has more than 20 characters.");
+        books.stream()
+                .filter(book -> book.title.length() > 20)
                 .forEach(System.out::println);
 
         System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
