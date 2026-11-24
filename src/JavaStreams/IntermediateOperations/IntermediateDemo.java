@@ -1,4 +1,4 @@
-package JavaStreams.Intermediate;
+package JavaStreams.IntermediateOperations;
 
 import java.util.Arrays;
 import java.util.Comparator;

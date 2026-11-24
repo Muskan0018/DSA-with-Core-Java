@@ -1,4 +1,4 @@
-package JavaStreams.Intermediate.PracticeProject;
+package JavaStreams.IntermediateOperations.PracticeProject;
 
 public class Books {
     String title;
