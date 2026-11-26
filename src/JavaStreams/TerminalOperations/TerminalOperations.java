@@ -8,17 +8,22 @@ import java.util.stream.Stream;
 
 public class TerminalOperations {
     public static void main(String[] args) {
-        // reduce() - Used to combine all elements into a single value by repeatedly applying an operation.
-        List<Integer> numbers = Arrays.asList(10, 20, 30, 40, 50);
-        Stream<Integer> integerStream = numbers.stream();
-        int sum = integerStream.reduce(0, (acc, num) -> acc + num);
-        System.out.println("Sum of given numbers: " + sum);
-/*          acc → accumulator (stores the running result)
+/* reduce() - Used to combine all elements into a single value by repeatedly applying an operation.
+            acc → accumulator (stores the running result)
             curr → current element
             0 → initial value
         Common uses: sum, product, maximum, grouping, combining data.
-
  */
+        List<Integer> numbers = Arrays.asList(10, 20, 30, 40, 50);
+        Stream<Integer> integerStream = numbers.stream();
+//        int sum = integerStream.reduce(0, (acc, num) -> acc + num);    // OR below
+        int sum = integerStream.reduce(0, Integer::sum);
+        System.out.println("Sum of given numbers: " + sum);
+
+     // Shorthand method
+        int total = numbers.stream()
+                .reduce(0, Integer::sum);
+        System.out.println("(By using shorthand method) total : " + total);
 
         // collect() - In Java Streams, collect() is used to gather stream elements into a collection or another result.
         // find() - Finds the first element that satisfies a condition.
